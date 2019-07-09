@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
-namespace CRUD_CoreWebApp.Controllers
+namespace CRUD_CoreWebApp.API.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -19,7 +17,7 @@ namespace CRUD_CoreWebApp.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<string> Get([FromQuery]int id)
         {
             return "value";
         }
@@ -36,7 +34,10 @@ namespace CRUD_CoreWebApp.Controllers
         {
         }
 
-        // DELETE api/values/5
+        /// <summary>
+        /// Deletes a specific Item
+        /// </summary>
+        /// <param name="id"></param>
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
