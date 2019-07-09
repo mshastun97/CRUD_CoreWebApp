@@ -82,7 +82,6 @@ namespace CRUD_CoreWebApp.API
             RegisterSwagger(app);
             RegisterHealthChecks(app);
 
-
             app.UseHttpsRedirection();
             app.UseMvc();
         }
