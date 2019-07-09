@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp", "CRUD_CoreWebApp\CRUD_CoreWebApp.csproj", "{C6CC292D-4770-4727-82EB-10D4A9DEDA83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_CoreWebApp.API", "CRUD_CoreWebApp\CRUD_CoreWebApp.API.csproj", "{C6CC292D-4770-4727-82EB-10D4A9DEDA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.Business", "CRUD_CoreWebApp.Business\CRUD_CoreWebApp.Business.csproj", "{9F841D12-077E-4B2C-BD89-6034ECB085FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_CoreWebApp.Business", "CRUD_CoreWebApp.Business\CRUD_CoreWebApp.Business.csproj", "{9F841D12-077E-4B2C-BD89-6034ECB085FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.DB", "CRUD_CoreWebApp.DB\CRUD_CoreWebApp.DB.csproj", "{9F416492-48F5-43CD-8EFE-17974ADCB2C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_CoreWebApp.Entities", "CRUD_CoreWebApp.DB\CRUD_CoreWebApp.Entities.csproj", "{9F416492-48F5-43CD-8EFE-17974ADCB2C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.Model", "CRUD_CoreWebApp.Model\CRUD_CoreWebApp.Model.csproj", "{1E8BAA84-62D7-49CA-A208-C55DBF5E1521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_CoreWebApp.Model", "CRUD_CoreWebApp.Model\CRUD_CoreWebApp.Model.csproj", "{1E8BAA84-62D7-49CA-A208-C55DBF5E1521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.Business.Tests", "CRUD_CoreWebApp.Business.Tests\CRUD_CoreWebApp.Business.Tests.csproj", "{9F464ABC-CB19-4F9D-979A-77E28A8967D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_CoreWebApp.Business.Tests", "CRUD_CoreWebApp.Business.Tests\CRUD_CoreWebApp.Business.Tests.csproj", "{9F464ABC-CB19-4F9D-979A-77E28A8967D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.DB.Tests", "CRUD_CoreWebApp.DB.Tests\CRUD_CoreWebApp.DB.Tests.csproj", "{D3D2DD0D-7C01-4B4F-BB1B-558C28C16301}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.API.Tests", "CRUD_CoreWebApp.API.Tests\CRUD_CoreWebApp.API.Tests.csproj", "{EA35C963-F212-468E-B741-7879BA4163AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.Model.Tests", "CRUD_CoreWebApp.Model.Tests\CRUD_CoreWebApp.Model.Tests.csproj", "{15131A75-74FA-487C-8B83-D8A73FA1EB4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_CoreWebApp.DataAccess", "CRUD_CoreWebApp.DataAccess\CRUD_CoreWebApp.DataAccess.csproj", "{FEAF593A-CF29-4889-B3B6-C3C1B4E6DBEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{9F464ABC-CB19-4F9D-979A-77E28A8967D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F464ABC-CB19-4F9D-979A-77E28A8967D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F464ABC-CB19-4F9D-979A-77E28A8967D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3D2DD0D-7C01-4B4F-BB1B-558C28C16301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3D2DD0D-7C01-4B4F-BB1B-558C28C16301}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3D2DD0D-7C01-4B4F-BB1B-558C28C16301}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3D2DD0D-7C01-4B4F-BB1B-558C28C16301}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15131A75-74FA-487C-8B83-D8A73FA1EB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15131A75-74FA-487C-8B83-D8A73FA1EB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15131A75-74FA-487C-8B83-D8A73FA1EB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15131A75-74FA-487C-8B83-D8A73FA1EB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA35C963-F212-468E-B741-7879BA4163AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA35C963-F212-468E-B741-7879BA4163AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA35C963-F212-468E-B741-7879BA4163AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA35C963-F212-468E-B741-7879BA4163AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEAF593A-CF29-4889-B3B6-C3C1B4E6DBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEAF593A-CF29-4889-B3B6-C3C1B4E6DBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEAF593A-CF29-4889-B3B6-C3C1B4E6DBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEAF593A-CF29-4889-B3B6-C3C1B4E6DBEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
