@@ -28,6 +28,7 @@ namespace CRUD_CoreWebApp.API
 
             ConfigureSwagger(services);
             ConfigureHealthChecks(services);
+            ConfigureVersioning(services);
         }
 
         private static void ConfigureSwagger(IServiceCollection service)
@@ -64,6 +65,16 @@ namespace CRUD_CoreWebApp.API
         {
             service.AddHealthChecksUI();
             service.AddHealthChecks();
+        }
+
+        private static void ConfigureVersioning(IServiceCollection service)
+        {
+            service.AddApiVersioning(c =>
+            {
+                c.ReportApiVersions = true;
+                c.AssumeDefaultVersionWhenUnspecified = true;
+                c.DefaultApiVersion = new ApiVersion(1, 0);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
