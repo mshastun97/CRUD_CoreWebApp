@@ -6,6 +6,7 @@ namespace CRUD_CoreWebApp.API.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
     public class ValuesController : ControllerBase
     {
         // GET api/values
