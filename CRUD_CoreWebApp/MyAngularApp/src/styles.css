@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+	margin:0;
+	background:url(assets/images/bg-body.jpg);
+}
+.page{
+	background:url(assets/images/bg-header.jpg) no-repeat center top;
+}
